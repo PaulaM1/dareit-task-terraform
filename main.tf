@@ -18,7 +18,7 @@ resource "google_compute_instance" "dareit-vm-ci" {
     network = "default"
 
     access_config {
-      // Ephemeral public IP address
+      // Ephemeral public IP
     }
   }
 }
