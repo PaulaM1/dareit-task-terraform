@@ -22,3 +22,10 @@ resource "google_compute_instance" "dareit-vm-ci" {
     }
   }
 }
+
+###################  Storage Bucekt ##########################
+resource "google_storage_bucket" "dareit-bucket" {
+  name          = "paulam-dareit-cloud-bucket-ci-cd"
+  location      = "EU"
+  force_destroy = true
+}
